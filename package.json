@@ -1,14 +1,14 @@
 {
-  "name": "rongcloud-sdk",
+  "name": "@beige/rongcloud-sdk",
   "version": "3.0.1",
-  "description": "The Server SDK of RongCloud",
+  "description": "The Server SDK of RongCloud, Fork By hebeiliujh",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rongcloud/server-sdk-nodejs"
+    "url": "git+https://github.com/hebeiliujh/server-sdk-nodejs.git"
   },
   "keywords": [
     "mobile",
@@ -18,10 +18,7 @@
   ],
   "author": "RongCloud",
   "contributors": [
-    {
-      "name": "yuhongda",
-      "email": "yuhongda0315@163.com"
-    }
+    "hebeiliujh <wyliujh@163.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -34,5 +31,10 @@
   },
   "devDependencies": {
     "jasmine": "^2.8.0"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "example",
+    "lib": "lib"
   }
 }
