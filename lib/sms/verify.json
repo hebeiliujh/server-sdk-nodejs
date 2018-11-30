@@ -1,0 +1,56 @@
+{
+	"sendData": {
+		"_self": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			},
+			"typeof": {
+				"type": "object",
+				"invalid": "20006"
+			}
+		},
+		"phone": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			}
+		},
+		"template_id": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			}
+		},
+		"region": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			}
+		}
+	},
+	"verifyData": {
+		"_self": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			},
+			"typeof": {
+				"type": "object",
+				"invalid": "20006"
+			}
+		},
+		"session_id": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			}
+		},
+		"code": {
+			"require": {
+				"must": true,
+				"invalid": "20005"
+			}
+		}
+	}
+}

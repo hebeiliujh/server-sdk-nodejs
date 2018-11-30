@@ -1,6 +1,6 @@
 {
   "name": "@beige/rongcloud-sdk",
-  "version": "3.0.1",
+  "version": "3.0.8",
   "description": "The Server SDK of RongCloud, Fork By hebeiliujh",
   "main": "index.js",
   "scripts": {

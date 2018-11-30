@@ -1,0 +1,112 @@
+{
+	"sendCode": {
+		"docs": "https://www.rongcloud.cn/docs/sms_service.html#send_sms_code",
+		"url": "sendCode",
+		"params": {
+			"sendData": {
+				"region": "86",
+				"phone": "15100000000",
+				"template_d": "VB0QD2f4YczY9RlYhg3X4a"
+			}
+		},
+		"response": {
+			"success": {
+				"code": 200,
+				"sessionId": "jlk456j5"
+			},
+			"fail": {
+				"1009": {
+					"code": "1009",
+					"msg": "没有开启图验功能"
+				},
+				"1010": {
+					"code": "1010",
+					"msg": "未使用已开启的图验功能"
+				},
+				"1000": {
+					"code": "1000",
+					"msg": "内部逻辑错误"
+				},
+				"1003": {
+					"code": "1003",
+					"msg": "参数错误"
+				},
+				"1005": {
+					"code": "1005",
+					"msg": "参数长度超出限制"
+				},
+				"1008": {
+					"code": "20001",
+					"msg": "调用频率超限，每秒钟限制 100 次，调整频率上限请移步至专有云 http://www.rongcloud.cn/pricing#pay"
+				},
+				"1011": {
+					"code": "1011",
+					"msg": "剩余条数不足，需要充值"
+				},
+				"1014": {
+					"code": "1014",
+					"msg": "短信验证码已验证过，再次验证失效"
+				},
+				"1015": {
+					"code": "1015",
+					"msg": "短信验证码过期无效"
+				}
+			}
+		}
+
+	},
+	"verifyCode": {
+		"docs": "https://www.rongcloud.cn/docs/sms_service.html#verify_code",
+		"url": "verifyCode",
+		"params": {
+			"verifyData": {
+				"session_id": "aFo990k",
+				"code": "513512"
+			}
+		},
+		"response": {
+			"success": {
+				"code": "200",
+				"msg": "成功返回"
+			},
+			"fail": {
+				"1009": {
+					"code": "1009",
+					"msg": "没有开启图验功能"
+				},
+				"1010": {
+					"code": "1010",
+					"msg": "未使用已开启的图验功能"
+				},
+				"1000": {
+					"code": "1000",
+					"msg": "内部逻辑错误"
+				},
+				"1003": {
+					"code": "1003",
+					"msg": "参数错误"
+				},
+				"1005": {
+					"code": "1005",
+					"msg": "参数长度超出限制"
+				},
+				"1008": {
+					"code": "20001",
+					"msg": "调用频率超限，每秒钟限制 100 次，调整频率上限请移步至专有云 http://www.rongcloud.cn/pricing#pay"
+				},
+				"1011": {
+					"code": "1011",
+					"msg": "剩余条数不足，需要充值"
+				},
+				"1014": {
+					"code": "1014",
+					"msg": "短信验证码已验证过，再次验证失效"
+				},
+				"1015": {
+					"code": "1015",
+					"msg": "短信验证码过期无效"
+				}
+			}
+		}
+	}
+}
