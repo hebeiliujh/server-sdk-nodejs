@@ -2,6 +2,10 @@
 
 **文档迁移至**: http://www.rongcloud.cn/docs/server_sdk_api/
 
+```
+v3.0.8后 新增发送手机验证码、校验手机验证码功能，
+```
+
 #### 初始化
 
 1、安装 [Node.js 4.0+](http://nodejs.cn/download/)
@@ -39,6 +43,32 @@ var user = {
 	portrait: 'http://7xogjk.com1.z0.glb.clouddn.com/IuDkFprSQ1493563384017406982'
 };
 User.register(user).then(result => {
+	console.log(result);
+}, error => {
+	console.log(error);
+});
+
+// API 文档: https://www.rongcloud.cn/docs/sms_service.html
+// 在官网新版SDK中完善的功能，尚未加入图片验证码的功能。
+var Sms = RongSDK.Sms;
+var sendData = {
+	region: '86',
+	phone: '153xxxxxxxx',
+	template_id: 'dsfdsfdfdsfsd'
+};
+// 发送手机验证码
+Sms.sendCode(sendData).then(result => {
+	console.log(result);
+}, error => {
+	console.log(error);
+});
+
+var verifyData = {
+	session_id: '2312312', // 发送验证码时得到的sessionId
+	code: '3122'
+};
+// 校验验证码
+Sms.verifyCode(verifyData).then(result => {
 	console.log(result);
 }, error => {
 	console.log(error);
